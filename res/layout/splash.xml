@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/txt_sub_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#44ff0000"
+        android:gravity="center"
+        android:text="@string/txt_hotline"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/vinafood"
+        android:layout_width="@dimen/layx370"
+        android:layout_height="@dimen/layx64"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layy40"
+        android:src="@drawable/txt_vinafood_loading" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vinafood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layx10" />
+
+    <TextView
+        android:id="@+id/txt_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:background="#44ff0000"
+        android:gravity="center"
+        android:textColor="@color/WHITE" />
+
+</RelativeLayout>

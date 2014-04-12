@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VinaFood</string>
+
+    <string-array name="purpose_list">
+        <item name="md1">Tổ chức tiệc cưới</item>
+        <item name="md2">Hẹn hò</item>
+        <item name="md3">Ăn gia đình</item>
+        <item name="md4">Họp nhóm</item>
+        <item name="md5">Tiệc ngoài trời</item>
+        <item name="md6">Ăn vặt</item>
+        <item name="md7">Nhậu nhẹt</item>
+        <item name="md8">Hát hò</item>
+    </string-array>
+    <string-array name="cuisine_style_list">
+        <item name="all">Bất kỳ</item>
+        <item name="st1">Miền Bắc</item>
+        <item name="st2">Miền Trung</item>
+        <item name="st3">Miền Nam</item>
+        <item name="st4">Tây Nguyên</item>
+        <item name="st5">Nhật Bản</item>
+        <item name="st6">Hàn Quốc</item>
+        <item name="st7">Trung Quốc</item>
+        <item name="st8">Thái Lan</item>
+        <item name="st9">Châu Âu</item>
+        <item name="st10">Châu Mỹ</item>
+        <item name="st11">Châu Á</item>
+        <item name="st12">Châu Phi</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <!-- Type of place -->
+    <string name="bar">Bar</string>
+    <string name="side_walk_food">Quán ăn vỉa hè</string>
+    <string name="restaurant">Nhà hàng</string>
+    <string name="popular_restaurant">Quán ăn bình dân</string>
+    <string name="luxurious_restaurant">Nhà hàng sang trọng</string>
+    <string name="ice_cream_shop">Quán kem</string>
+    <string name="fastfood">Quán ăn nhanh</string>
+    <string name="cafe">Quán cà phê</string>
+    <string name="beer">Quán bia</string>
+    <string name="kfc">KFC</string>
+    <!--  -->
+    <string name="txt_menu">Menu</string>
+    <string name="txt_discovery">Khám phá</string>
+    <string name="txt_favorite">Ưa thích</string>
+    <string name="txt_recent_view">Xem gần đây</string>
+    <string name="txt_about_us">Thông tin</string>
+
+    <color name="RED_NORMAL">#88000000</color>
+    <color name="RED_FOCUS">#44000000</color>
+
+    <string name="current_version">1.78</string>
+    <string name="hello">Hello World, Main!</string>
+
+    <color name="RED">#FF00</color>
+    <color name="WHITE">#FFFF</color>
+    <color name="GREEN">#F0F0</color>
+    <color name="BLUE">#F00F</color>
+    <color name="RG">#FFF0</color>
+    <color name="RB">#FF0F</color>
+    <color name="GB">#F0FF</color>
+    <color name="WHILE_TRANFARENT">#0FFF</color>
+    <color name="GREEN_ALPHA">#30F0</color>
+    <color name="BLACK">#F000</color>
+    <color name="TITLE_BACKGROUND">#50F0</color>
+
+    <string name="has_label_vn">có tên</string>
+    <string name="has_abstract_vn">có tóm tắt</string>
+    <string name="nearBy">Gần địa điểm</string>
+    <string name="hasRating">Xếp loại</string>
+    <string name="has_location">Địa chỉ</string>
+    <string name="data_not_exist">Dữ liệu chưa có!</string>
+    <string name="belongto">Thuộc ngân hàng</string>
+    <string name="belongtocompany">Thuộc công ty</string>
+    <string name="other_company">Công ty khác </string>
+    <string name="by_interest">theo sở thích của mình</string>
+    <string name="any_key">Tất cả</string>
+    <string name="hasCuisineStyle">Có phong cách</string>
+    <string name="txt_all">Bất kỳ</string>
+    <string name="txt_loading">Đang tải dữ liệu...</string>
+    <string name="type">Loại</string>
+    <string name="address">Địa chỉ</string>
+    <string name="semantic_search">Tìm kiếm ngữ nghĩa</string>
+    <string name="quick_search">Tìm nhanh</string>
+    <string name="preference">Sở thích</string>
+    <string name="geo_search">Tìm theo ngữ cảnh</string>
+    <string name="smart_recommendation">Gợi ý thông minh</string>
+    <string name="accommodation_search">Chỗ ở</string>
+    <string name="in_range">trong bán kính</string>
+    <string name="attraction">Nổi tiếng</string>
+    <string name="tourist_resource">Tham quan</string>
+    <string name="health_resource">Sức khỏe</string>
+    <string name="vehicle_resource">Xe cộ</string>
+    <string name="bank">Ngân hàng</string>
+    <string name="favorite">Đánh dấu</string>
+    <string name="not_update_yet">Chưa cập nhật</string>
+    <string name="show_all_on_map"> Show all places on this map.</string>
+    <string name="favorite_intro">Hiển thị các địa điểm bạn đã đánh dấu.</string>
+    <string name="filter_result">Lọc kết quả...</string>
+    <string name="dining_help">Example:\nPizza, Chả cá, Nhà hàng, nha hang, Hoàn Kiếm, Huynh Thuc Khang, am thuc chau Au ... Bạn có thể dùng tiếng Việt không dấu hoặc không nhập từ khóa và nhấn ngay nút Search.\nBạn cũng có thể tìm kiếm theo các thuộc tính bên dưới</string>
+    <string name="accomodation_help">Example:\nKhách sạn, Hanoi, Hoan Kiem, Daewoo ... Bạn có thể dùng tiếng Việt không dấu hoặc không nhập từ khóa và nhấn ngay nút Search.\nBạn cũng có thể tìm kiếm theo các thuộc tính bên dưới</string>
+    <string name="entertainment_service_help">Example:\nHoan Kiem, ...Bạn có thể dùng tiếng Việt không dấu hoặc không nhập từ khóa và nhấn ngay nút Search.\nBạn cũng có thể tìm kiếm theo các thuộc tính bên dưới </string>
+    <string name="vehicle_service_help">Example:\nGiai Phong, Salon, Garage ... Bạn có thể dùng tiếng Việt không dấu hoặc không nhập từ khóa và nhấn ngay nút Search.\nBạn cũng có thể tìm kiếm theo các thuộc tính bên dưới</string>
+    <string name="bank_resource_help">Example:\nGiai Phong, Atm, VietinBank, Vietcombank ... Bạn có thể dùng tiếng Việt không dấu hoặc không nhập từ khóa và nhấn ngay nút Search.\nBạn cũng có thể tìm kiếm theo các thuộc tính bên dưới</string>
+    <string name="dining_service">Ẩm thực</string>
+    <string name="health_service">Dịch vụ sức khỏe</string>
+    <string name="vehicle_service">Dịch vụ xe cộ</string>
+    <string name="bank_service">Dịch vụ ngân hàng</string>
+    <string name="tourist_service">Địa điểm thăm quan</string>
+    <string name="entertainment_service">Dịch vụ giải trí</string>
+    <string name="semantic_search_header">Tìm kiếm theo ngữ nghĩa</string>
+    <string name="topic_search_header">Tìm kiếm theo chủ đề</string>
+    <string name="geo_search_header">Gợi ý và Tìm kiếm theo sở thích</string>
+    <string name="quick_search_des">Nhanh chóng truy nhập thông tin qua việc gõ phím đặt câu hỏi đơn giản</string>
+    <string name="semantic_search_des">Giúp bạn đặt những câu hỏi từ đơn giản đến phức tạp về các địa điểm du lịch (xung quanh bạn) và nhận những kết quả chính xác.</string>
+    <string name="preference_des">Bạn có thể chọn sở thích của mình để chương trình giúp đỡ bạn tốt hơn.</string>
+    <string name="geo_search_des">Xem các địa điểm ở gần bạn và đúng với sở thích của bạn.</string>
+    <string name="smart_recommendation_des">Gợi ý các địa điểm thú vị xung quanh bạn.</string>
+    <string name="accommodation_search_des">Tìm khách sạn, địa điểm cho thuê, nhà trọ</string>
+    <string name="dining_service_des">Giúp bạn tìm những địa điểm ăn uống</string>
+    <string name="tourist_resource_des">Tìm kiếm nhanh các địa điểm tham quan du lịch.</string>
+    <string name="health_resource_des">Tìm kiếm các dịch vụ liên quan đến sức khỏe </string>
+    <string name="vehicle_resource_des">Tìm kiếm các dịch vụ liên quan đến xe cộ </string>
+    <string name="entertainment_service_des">Tìm các dịch vụ giải trí</string>
+    <string name="in_range_of">Phạm vi (km)</string>
+    <string name="request_time">Tần suất quét</string>
+    <string name="minutes">phút</string>
+    <string name="clear_your_lastest_context">Xóa ngữ cảnh gần nhất</string>
+    <string name="apply">Cập nhật</string>
+    <string name="cancel">Quay lại</string>
+    <string name="close">Đóng</string>
+    <string name="stop">Dừng</string>
+    <string name="run">Chạy</string>
+    <string name="near_by">Quanh bạn(1km)</string>
+    <string name="rating">xếp loại</string>
+    <string name="has_name">có tên</string>
+    <string name="category">Phân loại</string>
+    <string name="interest">Sở thích</string>
+    <string name="fandr">Nâng cao</string>
+    <string name="account">Tài khoản</string>
+    <string name="you_want_find_a">Bạn muốn tìm</string>
+    <string name="with_key_word">với từ khóa</string>
+    <string name="you_want_find_a_accommodation">Bạn muốn tìm nơi ở:</string>
+    <string name="want_find_dining_service">Bạn muốn tìm một địa điểm ăn uống</string>
+    <string name="add_new_contraint_for">mà có đặc điểm là</string>
+    <string name="constraint_for_your_place">ràng buộc cho</string>
+    <string name="select_property">--  Chọn thuộc tính --</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="option">+ Tùy chọn</string>
+    <string name="advanced">+ Ngữ Nghĩa</string>
+    <string name="help">Giúp đỡ</string>
+    <string name="to_common">Thông thường</string>
+    <string name="optional">Tùy chọn</string>
+    <string name="false1">Sai</string>
+    <string name="true1">Đúng</string>
+    <string name="None">Bất kỳ</string>
+    <string name="view_map">Xem bản đồ</string>
+    <string name="place">Địa điểm</string>
+    <string name="please_wait">Đang lấy kết quả. Vui lòng đợi một chút!</string>
+    <string name="please_wait_data">Vui lòng đợi một chút!</string>
+    <string name="connect_fail">Kết nối bị lỗi. Bạn có muốn thử lại?</string>
+    <string name="nearByProperty">gần</string>
+    <string name="hasRatingProperty">xếp loại</string>
+    <string name="hasCuisineStyleProperty">có phong cách</string>
+    <string name="no_image">Địa điểm này không có ảnh!</string>
+    <string name="intro_sig">Ẩm thực Việt\nPhát triển bởi: Nguyễn Hữu Giáp\nLiên hệ: hgbk.it@gmail.com\n(c) Copyright SIG, 2012.  All rights reserved.</string>
+    <string name="intro">Giới thiệu</string>
+    <string name="intro_contact">Liên hệ</string>
+    <string name="intro_version">Phiên bản</string>
+    <string name="intro_otherapp">Các sản phẩm của nhóm SIG</string>
+    <string name="intro_vinafood">Ẩm thực Việt (VinaFood) - Hệ thống cung cấp và chia sẻ thông tin và tri thức dựa vị trí trên thiết bị di động phát triển bởi nhóm nghiên cứu SIG. Phần mềm này giúp bạn nắm bắt thông tin về địa điểm và dịch vụ ẩm thực. </string>
+    <string name="other_app">Điểm đến Việt: Phần mềm cung cấp dịch vụ thông tin địa điểm và hướng dẫn du lịch thông minh.\n Ngoài ra còn rất nhiều sản phẩm khác nữa, các bạn có thể xem tại đây</string>
+    <string name="version_100">Phiên bản đầu tiên của Ẩm thực Việt hiện tại chỉ hỗ trợ tại khu vực Hà Nội. Cung cấp lượng dữ liệu lớn về các dịch vụ ẩm thực tại Hà Nội. Những tính năng mới sẽ được cập nhật trong các phiên bản sau.</string>
+    <string name="slogan">Người bạn đường thông minh của bạn. </string>
+    <string name="the_crow_flies">Đường chim bay</string>
+    <string name="show_all">Xem tất cả</string>
+    <string name="you_are_stay_in">Đã load dữ liệu</string>
+    <string name="show_geo_search">Xem địa điểm phù hợp</string>
+    <string name="title_help_begin">Muốn tìm thêm? Mở rộng bán kính tìm kiếm hay dùng hệ thống Tìm kiếm của iCompanion. Muốn lọc bớt? Hãy thu hẹp bán kính, chọn Phân loại hay khai báo Sở thích.</string>
+    <string name="title_help_category">Muốn tìm thêm? Tăng bán kính tìm biếm hoặc chọn loại rộng hơn. Để lọc kết quả, chọn loại địa điểm cụ thể hơn. </string>
+    <string name="title_help_interest">Để chương trình tự động gợi ý, sử dụng chức năng trong tìm kiếm nâng cao.</string>
+    <string name="geo_pos">Vị trí địa lý</string>
+    <string name="choose_category">Chọn loại địa điểm</string>
+    <string name="choose_distance">Chọn khoảng cách</string>
+    <string name="already">Tiếp tục</string>
+    <string name="subject">Chủ thể</string>
+    <string name="verb">Thuộc tính</string>
+    <string name="object">Đối tượng</string>
+    <string name="clear">Xóa</string>
+    <string name="data_not_update">Chưa có dữ liệu chi tiết cho địa điểm này. Ở phiên bản sau, chúng tôi sẽ cung cấp thêm chức năng góp ý về địa điểm.</string>
+    <string name="incorrect_subject">Chủ thể không đúng, mời nhập lại!</string>
+    <string name="incorrect_object">Đối tượng không đúng, mời nhập lại!</string>
+    <string name="fact_about">Chi tiết về</string>
+    <string name="no_result">Không có kết quả cho trường hợp này hoặc kết nối mạng bị ngắt. Hãy thử lại với trường hợp khác!</string>
+    <string name="tap_on_map_icon">Bấm vào biểu tượng để xem các địa điểm trên bản đồ.</string>
+    <string name="result_for">Kết quả cho</string>
+    <string name="share_place_by_icom">Chia sẻ địa điểm \'xxx\' bởi iCompanion</string>
+    <string name="do_you_want_to_exit">Bạn có muốn thoát không?</string>
+    <string name="yes">Thoát</string>
+    <string name="no">Quay lại</string>
+    <string name="attraction_intro">Những địa điểm nổi tiếng ở Việt Nam</string>
+    <string name="bank_intro">Tìm kiếm các ngân hàng hoặc trạm ATM</string>
+    <string name="enable_gps">Bạn chưa bật chức năng lấy thông tin vị trí qua GPS hoặc Wireless. Bạn có muốn bật thiết lập này không?</string>
+    <string name="apply_successfully">Thiết lập thành công!</string>
+    <string name="enter_preference">Bạn chưa thiết lập sở thích. Thiết lập ngay bây giờ?</string>
+    <string name="not_support_call">Thiết bị của bạn không hỗ trợ chức năng gọi điện.</string>
+    <string name="not_catch_location_yet">Vị trí của bạn chưa được cập nhật! Chương trình đang sử dụng vị trí mặc định là tại hồ Hoàn Kiếm!</string>
+    <string name="select_on_map">Chọn thủ công</string>
+    <string name="change_city">Bấm menu để thay đổi thành phố.</string>
+    <string name="no_search_result"> Không tìm thấy địa điểm phù hợp.Muốn có kết quả hãy kiểm tra kết nối internet hoặc thay đổi tham số tìm kiếm. </string>
+    <string name="no_favorite_place"> Bạn chưa đánh dấu địa điểm nào. </string>
+    <string name="choose_place">Chọn trên bản đồ</string>
+    <string name="list_grid">Danh sách/Lưới</string>
+    <string name="city">Thành phố</string>
+    <string name="refresh_cache">Xóa cache</string>
+    <string name="choose_city">Chọn thành phố</string>
+    <string name="choose_city_staying">Chọn thành phố mà bạn đang ở</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="about">Giới thiệu</string>
+    <string name="update_location">Cập nhật vị trí</string>
+    <string name="refresh">Làm mới</string>
+    <string name="use_mapquest">Dùng MapQuess</string>
+    <string name="use_gmap">Dùng GMaps</string>
+    <string name="map_setting">Cài đặt</string>
+    <string name="detail_guide">Chi tiết</string>
+    <string name="more">Thêm</string>
+    <string name="no_network_msg">Không có kết nối Internet!</string>
+    <string name="network_setting">Cài đặt mạng</string>
+    <string name="view_favorite">Điểm đánh dấu</string>
+    <string name="try_again">Thử lại</string>
+    <string name="contact">Liên lạc</string>
+    <string name="information">Thông tin</string>
+    <string name="version">Phiên bản</string>
+    <string name="rate_diemdenviet">Đánh giá Điểm đến Việt trên Google Play</string>
+    <string name="new_in_168">- Bổ sung 10000 địa điểm tại Đà Nẵng.\n- Thêm Chủ đề Giải trí: Karaoke, Bar, Billiard,..\n- Fix lỗi giao diện trên ICS 4.0.3. Chỉnh giao diện kết quả.\n- Giao diện thông tin chi tiết thân thiện.\nPhân loại địa điểm tùy biến theo thành phố.</string>
+    <string name="new_in_17">- Bổ sung 4000 địa điểm tại Hải Phòng.\n- Bản đồ mới - Open Street Map, có thể dùng song song với Google Map.\nTối ưu hóa dịch vụ vị trí - tiết kiệm pin. \n- Cập nhật vị trí người dùng khi xem bản đồ trong lúc đang di chuyển.</string>
+    <string name="new_in_175">- Bổ sung nhiều địa điểm ở Nha Trang - Khánh Hòa. \n- Tự động kết nối đến server thay thế khi server cũ bị hỏng, nâng cao độ ổn định của ứng dụng đồng thời cải thiện tốc độ tìm kiếm.\n - Giao diện xem ảnh mới.\n - Tối ưu dịch vụ vị trí.\n- Sửa một số lỗi.</string>
+    <string name="new_in_20">- Giao diện người dùng hoàn toàn mới. \n- Hệ thống đăng nhập theo tài khoản FaceBook, Google cho phép bình luận, đánh giá các địa điểm. \n - Chia sẻ dễ dàng trên FaceBook. \n- Thêm 9000 địa điểm thuộc Bà Rịa Vũng Tàu, nâng tổng số địa điểm trong hệ thống lên 60000. \n- Tối ưu tốc độ tìm kiếm.</string>
+    <string name="password">Mật khẩu</string>
+    <string name="username">Tài khoản</string>
+    <string name="login">Đăng nhập</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="name">Tên</string>
+    <string name="back">Quay lại</string>
+    <string name="new_version_available">Đã có phiên bản xxx trên Google Play.</string>
+    <string name="people_like">người</string>
+    <string name="no_abstract_note"> Chưa có mô tả về địa điểm này! </string>
+    <string name="open_time"> Giờ mở cửa </string>
+    <string name="close_time"> Giờ đóng cửa </string>
+    <string name="style"> Phong cách </string>
+    <string name="comment"> Bình luận </string>
+    <string name="agree">Đồng ý</string>
+    <string name="skip_login_msg">Bạn sẽ không thể bình luận hoặc sử dụng nhiều chức năng khác nếu bỏ qua đăng nhập.</string>
+    <string name="book_mark">Đánh dấu</string>
+    <string name="un_book_mark">Xóa đánh dấu</string>
+    <string name="comment_uppercase">BÌNH LUẬN</string>
+    <string name="base_information">THÔNG TIN CƠ BẢN</string>
+    <string name="detail">Chi tiết</string>
+    <string name="language_setting">Chọn ngôn ngữ</string>
+    <string name="account_info">Thông tin tài khoản</string>
+    <string name="email">Hòm thư</string>
+    <string name="point">Điểm</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="search_with_keyword">Tìm kiếm theo từ khóa</string>
+    <string name="rate_this_app">Đánh giá</string>
+    <string name="search_with_more_option">Tìm kiếm theo thuộc tính</string>
+    <string name="other_option">Tùy chọn khác</string>
+    <string name="all">Tất cả</string>
+    <string name="no_data_of_topic">Hiện tại hệ thống chưa có dữ liệu về chủ đề %1$s của thành phố %2$s. Dữ liệu sẽ được cập nhật trong thời gian sắp tới</string>
+
+    <!-- Dinning service -->
+    <string name="txt_hotline">Hotline: (+84)1664-643-234 Vinafood v1.0</string>
+    <string name="txt_angi_odau">Ăn gì?Ở đâu?</string>
+    <string name="txt_filter">Lọc</string>
+    <string name="txt_scope">Phạm vi</string>
+    <string name="txt_agree">Đồng ý</string>
+    <string name="txt_cancel">Hủy</string>
+    <string name="txt_search">Tìm kiếm</string>
+    <!-- Filter -->
+    <string name="txt_city">Tỉnh thành</string>
+    <string name="txt_businese_type">Hình thức</string>
+    <string name="txt_purpose">Mục đích</string>
+    <string name="txt_cuisine">Phong cách ẩm thực</string>
+    <string name="txt_landmark">Khu vực</string>
+    <string name="txt_kind">Kind</string>
+    <string name="txt_distance">Khoảng cách</string>
+    <string name="txt_exit">Bạn có chắc chắn muốn thoát?</string>
+
+    <!-- Share -->
+    <string name="share_title">Ứng dụng ẩm thực tiện lợi</string>
+    <string name="share_subject">Ứng dụng ẩm thực tiện lợi</string>
+    <string name="share_content">Phần mềm giúp tìm kiếm dễ dàng các dịch vụ ăn uống, gợi ý những địa điểm nổi tiếng.Cung cấp dữ liệu về sức khỏe và công thức nấu ăn. Link tải ứng dụng: https://play.google.com/store/apps/details?id=hust.hgbk.vtio.vinafood.main</string>
+    <string name="more_app_link">https://play.google.com/store/apps/developer?id=Semantic+Innovation+Group</string>
+    <string name="app_link">https://play.google.com/store/apps/details?id=hust.hgbk.vtio.vinafood</string>
+
+</resources>

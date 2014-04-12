@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#99000000"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/star_rate_orange"
+        android:onClick="onRate"
+        android:text="Đánh giá" />
+
+    <Button
+        android:id="@+id/btnOtherApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_new"
+        android:onClick="onMoreApp"
+        android:text="Ứng dụng khác" />
+
+    <Button
+        android:id="@+id/btnShareApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_small_share_normal"
+        android:onClick="onShareApp"
+        android:text="Chia sẻ" />
+
+</LinearLayout>

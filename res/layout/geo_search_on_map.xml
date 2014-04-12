@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layy70"
+        android:background="@drawable/top_bar_bg"
+        android:gravity="center_vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/placeTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Place label here"
+            android:textColor="@color/WHITE" />
+    </LinearLayout>
+
+    <com.google.android.maps.MapView
+        android:id="@+id/place_map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0MkNJnAK3xuKZqqWnwpyINkP-EksErL8Yz2yeDw"
+        android:clickable="true" />
+
+</LinearLayout>

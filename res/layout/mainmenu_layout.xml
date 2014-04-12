@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ROOT_LAYOUT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layx70"
+        android:background="@drawable/top_bar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/topbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layx70"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/img_place"
+                android:layout_width="@dimen/layy130"
+                android:layout_height="@dimen/layx40"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layx10"
+                android:background="@drawable/logo_small" />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="@dimen/layx70"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/btnMore"
+                android:background="@drawable/giapnh_button_search_topbar_selector"
+                android:onClick="onSearchButtonClick"
+                android:src="@drawable/icon_search" />
+
+            <ImageButton
+                android:id="@+id/btnMore"
+                android:layout_width="@dimen/layx70"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/giapnh_button_search_topbar_selector"
+                android:onClick="onMore"
+                android:src="@drawable/icon_more" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar_layout"
+        android:visibility="visible" >
+
+        <ViewFlipper
+            android:id="@+id/sampleFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layx200" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_chaca" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#99000000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="ĐA DẠNG"
+                        android:textColor="#aa00ff00"
+                        android:textSize="@dimen/text_35"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#99000000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="TIỆN LỢI"
+                        android:textColor="#ff00ffff"
+                        android:textSize="@dimen/text_35"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_map_demo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#99000000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/abstractInfor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="CHÍNH XÁC"
+                        android:textColor="#dd0088ff"
+                        android:textSize="@dimen/text_35"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ImageView07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_free_app" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#99000000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="MIỄN PHÍ"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/text_35"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ViewFlipper>
+
+        <RelativeLayout
+            android:id="@+id/update_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_button_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onUpdateCity"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView3"
+                android:gravity="center_vertical"
+                android:text="Chọn thành phố"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/text_24" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sampleFlipper"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/menuNearby"
+                    style="@style/MenuButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layx85"
+                    android:layout_margin="1dp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onNearBy" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/layx80"
+                        android:layout_height="@dimen/layx80"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_nearby" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/MenuButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:text="@string/near_by" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuDiscovery"
+                    style="@style/MenuButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layx85"
+                    android:layout_margin="1dp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onDiscovery" >
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="@dimen/layx80"
+                        android:layout_height="@dimen/layx80"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_discovery" />
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        style="@style/MenuButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/ImageView04"
+                        android:text="Khám phá" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuFavorite"
+                    style="@style/MenuButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layx85"
+                    android:layout_margin="1dp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onFavorist" >
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="@dimen/layx80"
+                        android:layout_height="@dimen/layx80"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_favorite" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        style="@style/MenuButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/ImageView03"
+                        android:text="Ưa thích" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuRecentView"
+                    style="@style/MenuButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layx85"
+                    android:layout_margin="1dp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onRecentView" >
+
+                    <ImageView
+                        android:id="@+id/ImageView05"
+                        android:layout_width="@dimen/layx80"
+                        android:layout_height="@dimen/layx80"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_recent" />
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        style="@style/MenuButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/ImageView05"
+                        android:text="Xem gần đây" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuAboutUs"
+                    style="@style/MenuButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layx85"
+                    android:layout_margin="1dp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onAboutUs" >
+
+                    <ImageView
+                        android:id="@+id/ic_about"
+                        android:layout_width="@dimen/layx80"
+                        android:layout_height="@dimen/layx80"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_about_us" />
+
+                    <TextView
+                        style="@style/MenuButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/ic_about"
+                        android:text="@string/txt_about_us" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#44ff0000"
+            android:gravity="center"
+            android:textColor="@color/WHITE"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_layout"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/version_change_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/version_change_log" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moreFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/layx10"
+        android:layout_marginTop="@dimen/layy70"
+        android:visibility="gone" >
+
+        <include layout="@layout/mainmenu_more_function_pop" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ROOT_LAYOUT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layx70"
+        android:background="@drawable/top_bar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/topbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layx70"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layx80"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/icon_inside"
+                android:visibility="visible" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/textfield_default_holo_light"
+                    android:completionThreshold="1"
+                    android:ems="10"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/text_22" >
+                </AutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/btnClearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/layx10"
+                    android:onClick="onClearText"
+                    android:src="@drawable/icon_insidesearch_x" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_layout"
+        android:background="#77ffffff"
+        android:cacheColorHint="#0000"
+        android:dividerHeight="@dimen/layy3" >
+    </ListView>
+
+</RelativeLayout>

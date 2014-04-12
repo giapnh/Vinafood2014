@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layy80"
+    android:background="@drawable/listview_item_selector"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/layx10" >
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Quan an"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/numItem"
+        android:layout_width="@dimen/layx30"
+        android:layout_height="@dimen/layy30"
+        android:background="@drawable/number"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_14"
+        android:textStyle="bold" />
+
+</LinearLayout>

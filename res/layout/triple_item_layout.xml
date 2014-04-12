@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="7dip" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content" android:id="@+id/img_place"
+			android:layout_height="wrap_content" android:src="@drawable/information_icon_small">
+		</ImageView>
+		<TextView
+			android:text="A constraint has three element to make a statement. Example: [Ho Guom] [is in] [Hanoi]."
+			android:id="@+id/questionTextView" android:textColor="@color/WHITE"
+			android:lines="3" android:padding="3dip" android:textSize="13dip"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:layout_width="fill_parent">
+		</TextView>
+	</LinearLayout>
+	<ScrollView 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<CheckBox android:text="Optional for this constraint"
+					android:id="@+id/checkBox1" android:checked="true"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+				</CheckBox>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_vertical">
+				<TextView android:text="Subject" android:id="@+id/txt_sub_menu"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+				</TextView>
+				<LinearLayout android:layout_height="wrap_content"
+					android:id="@+id/linearLayout2" android:layout_width="fill_parent"
+					android:gravity="right">
+					<Spinner android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/subjectSpinner">
+					</Spinner>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_vertical">
+				<TextView android:text="Predicate" android:id="@+id/txt_sub_menu"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+				</TextView>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/linearLayout3"
+					android:gravity="right">
+					<Spinner android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/predicateSpinner">
+					</Spinner>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_vertical">
+				<TextView android:text="Object" android:id="@+id/abstractInfor"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+				</TextView>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="right">
+					<Spinner android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:visibility="gone"
+						android:id="@+id/objectValueSpinner">
+					</Spinner>
+					<EditText android:layout_width="wrap_content"
+						android:text="" android:hint="No data..." android:layout_height="wrap_content"
+						android:id="@+id/dataValueEditText">
+					</EditText>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:background="@color/WHITE"
+		android:layout_width="fill_parent" android:layout_height="1dip">
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal">
+		<Button android:text="Save" android:layout_height="wrap_content"
+			android:layout_width="70dip" android:id="@+id/saveConstraintButton">
+		</Button>
+		<Button android:text="Cancel" android:layout_height="wrap_content"
+			android:layout_width="70dip" android:id="@+id/cancelConstraintDialogButton">
+		</Button>
+	</LinearLayout>
+</LinearLayout>

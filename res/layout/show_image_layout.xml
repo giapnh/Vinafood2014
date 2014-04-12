@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dd111d45"
+    android:id="@+id/imageLayout">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        >
+    </ProgressBar>
+    
+    <hust.hgbk.vtio.vinafood.customview.ShowImageFlipView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/flipView"
+        android:layout_centerInParent="true"
+        >
+    </hust.hgbk.vtio.vinafood.customview.ShowImageFlipView>
+</RelativeLayout>

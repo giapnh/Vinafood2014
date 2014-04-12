@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ROOT_LAYOUT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layx70"
+        android:background="@drawable/top_bar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/topbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layx70"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="@dimen/layx70"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/giapnh_button_search_topbar_selector"
+                android:onClick="onSearchButtonClick"
+                android:src="@drawable/icon_search" />
+
+            <ImageView
+                android:id="@+id/img_place"
+                android:layout_width="@dimen/layy130"
+                android:layout_height="@dimen/layx40"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layx10"
+                android:background="@drawable/logo_small"
+                android:onClick="onBack" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_place"
+                android:src="@drawable/amsc_arrow_next" />
+
+            <TextView
+                android:id="@+id/txt_sub_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="Món ngon Hà Nội"
+                android:textColor="#88009900"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_layout" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/layx70"
+    android:onClick="onBack" >
+
+    <FrameLayout
+        android:id="@+id/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/abs__ic_ab_back_holo_light" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="@dimen/layx130"
+        android:layout_height="@dimen/layx40"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ic_back"
+        android:background="@drawable/logo_small"
+        android:gravity="center" >
+    </RelativeLayout>
+
+</RelativeLayout>

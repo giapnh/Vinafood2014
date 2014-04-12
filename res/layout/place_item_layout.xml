@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="#66000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layy150"
+        android:layout_marginBottom="2dp"
+        android:background="#7fff" >
+
+        <ImageView
+            android:id="@+id/imagePlaceview"
+            android:layout_width="@dimen/layx150"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_red_border"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/noimage" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layy150"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/layx3"
+        android:layout_toRightOf="@+id/image_layout"
+        android:background="#bbffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/labelTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layx2"
+            android:background="#22ff0000"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ee0000ff"
+            android:textSize="@dimen/text_22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layx2"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/text_18"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/abstractInfor"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLength="120"
+            android:padding="1dp"
+            android:singleLine="false"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/text_17"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#99ff0000"
+        android:maxWidth="@dimen/layx150"
+        android:padding="2dp"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ratingLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeTextView"
+        android:orientation="horizontal"
+        android:padding="1dip"
+        android:visibility="invisible" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:background="#44ff0000" >
+
+        <ProgressBar
+            android:id="@+id/loadingProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/for_click_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layy150"
+        android:focusable="true" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:padding="7dip"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <LinearLayout 
+    android:id="@+id/linearLayout1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+        <TextView 
+        android:text="Variable name " 
+        android:id="@+id/txt_sub_menu" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">
+        </TextView>
+        <TextView 
+        android:id="@+id/errorText1"
+        android:text="[*]" 
+        android:textColor="@color/RED"
+        android:visibility="gone"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">
+        </TextView>
+        <EditText 
+        android:text=""
+        android:hint="name" 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:id="@+id/variableNameEditText">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_marginLeft="5dip"
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/linearLayout3">
+        <ImageView 
+        android:layout_width="wrap_content" 
+        android:id="@+id/img_place" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/information_icon_small">
+        </ImageView>
+        <TextView 
+        android:text="Name of variable is not important, just don't duplicate. Search result is independent this name." 
+        android:id="@+id/textView2" 
+        android:textColor="@color/WHITE"
+        android:textSize="13dip"
+        android:lines="3"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" android:layout_marginLeft="5dip">
+        </TextView>
+    </LinearLayout>
+        <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/linearLayout4" android:gravity="center_vertical">
+            <TextView 
+            android:text="This variable is a " 
+            android:id="@+id/textView3" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">
+            </TextView>
+	        <TextView 
+	        android:id="@+id/errorText2"
+	        android:text="[*]" 
+	        android:textColor="@color/RED"
+	        android:visibility="gone"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content">
+	        </TextView>            
+            <Spinner 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" android:id="@+id/variableClassSpinner">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/linearLayout5">
+            <CheckBox 
+            android:text="Show in search result" 
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:id="@+id/variableShowInResultCheckBox">
+            </CheckBox>
+        </LinearLayout>
+        <LinearLayout 
+	    android:background="@color/WHITE"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="1dip">
+	    </LinearLayout>
+        <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/linearLayout6" android:gravity="center">
+            <Button 
+            android:text="Save" 
+            android:layout_width="100dip" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/saveVariableButton">
+            </Button>
+            <Button 
+            android:text="Cancel" 
+            android:layout_width="100dip" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/cancelAddVarDiaglog">
+            </Button>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="#FFFF"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+    <LinearLayout 
+    android:padding="5dip"
+    android:orientation="horizontal"
+    android:id="@+id/mapSettingLinearLayout" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+        
+        <RadioGroup 
+        android:orientation="horizontal"
+        android:id="@+id/mapTypeRadioGroup" 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent">
+            <RadioButton 
+            android:textColor="@color/BLACK"
+            android:layout_weight="1"
+            android:text=" Traffic type" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:checked="true" 
+            android:id="@+id/trafficRadio">
+            </RadioButton>
+            <RadioButton 
+            android:textColor="@color/BLACK"
+            android:layout_weight="1"
+            android:text=" Satellite type" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/satelliteRadio">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout 
+    android:id="@+id/linearLayout1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+        <Button 
+        android:layout_weight="1"
+        android:text="OK" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" android:id="@+id/map_setting_dialog_ok_btn">
+        </Button>
+        <Button 
+        android:layout_weight="1"
+        android:text="Cancel" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" android:id="@+id/map_setting_dialog_cancel_btn">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

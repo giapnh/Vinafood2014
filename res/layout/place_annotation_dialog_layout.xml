@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background = "@color/WHITE"
+  android:padding = "3dip"
+  android:orientation = "vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <ScrollView 
+    android:layout_width="fill_parent" 
+    android:id="@+id/scrollView1" 
+    android:layout_height="wrap_content">
+        <LinearLayout 
+        android:id="@+id/linearLayout3" 
+        android:orientation ="vertical"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        	<LinearLayout 
+		    android:id="@+id/linearLayout1" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:gravity="center_vertical">
+		    	<WebView 
+		    	android:layout_height = "wrap_content" 
+		    	android:id="@+id/webViewImage" android:layout_width="80dip">
+		    	</WebView>
+		    	<TextView 
+		    	android:layout_marginLeft = "5dip"
+		    	android:id="@+id/textViewPlaceTitle" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_width="wrap_content" 
+		    	android:textColor = "@color/BLUE"
+		    	android:textStyle = "bold"
+		    	android:text="">
+		    	</TextView>
+		    </LinearLayout>
+		    <LinearLayout 
+		    android:background = "#2222"
+		    android:layout_width="fill_parent" 
+		    android:id="@+id/linearLayout2" 
+		    android:layout_height="wrap_content">
+		        <TextView 
+		        android:textColor ="@color/BLACK"
+		        android:id="@+id/textViewAbstract" 
+		        android:layout_height="wrap_content" 
+		        android:layout_width="wrap_content" 
+		        android:text="">
+		        </TextView>
+		    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

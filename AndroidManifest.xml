@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hust.hgbk.vtio.vinafood"
+    android:versionCode="2"
+    android:versionName="1.0.0.20140405" >
+
+    <!-- Copied from Google Maps Library/AndroidManifest.xml. -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launch"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:windowSoftInputMode="stateAlwaysVisible" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <!--
+             <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBf5reiHKE9259-QTmB2AKX1urJRG0b2fM" />
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAFUd5fKQdGTowlyoRs6IDfBrq5jXbVPJ0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.Splash"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ShowAllPlace_Osm"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ShowPlaceOnOsmap"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DetailGuideOsm"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.Main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.PreferUser"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.CustomSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.PlaceSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ActivitySearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.TravelPlan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.PlaceSearchResultActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryHanoiFamousActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryCuisineWithHelthActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryCookbookActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryCookbookSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryCookbookViewTopicActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryCuisineWithHelthViewTopicActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryCuisineWithHelthTopicSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryMainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DiscoveryShowItemOfType"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.FavoritePlaceActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ShowPlaceOnMapsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.SemanticBrowser"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.Annotator"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.InstanceDetails"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.QuickSearchResult"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.GeoSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ShowAllPlaceOnMap"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ShowPlaceOnMap"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.Recommendation"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.MenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.SubAppAccommodationSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.QuickResultActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.hust.hgbk.vtio.vinafood.main.QuickPlaceFlipper"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.NewMainLayout"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.PlaceDetails"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.RecentViewActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.ChooseOnMap"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.VehicleServiceSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.EntertainmentService"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.se.vtio.annotator.AnnotatorPlace"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.se.vtio.annotator.AddNewPlaceActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.MainMenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.MainViewPagerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.DinningServiceSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Dinning application -->
+        <activity
+            android:name="hust.hgbk.vtio.vinafood.main.PreferenceSetting"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <supports-screens android:anyDensity="true" />
+    <supports-screens android:smallScreens="true" />
+    <supports-screens android:normalScreens="true" />
+    <supports-screens android:largeScreens="true" />
+
+</manifest>

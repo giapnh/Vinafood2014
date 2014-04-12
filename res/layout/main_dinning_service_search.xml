@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/splash_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layx70"
+        android:background="@drawable/top_bar_bg" >
+
+        <include
+            android:id="@+id/icon_inside"
+            layout="@layout/icon_inside_layout" />
+
+        <RelativeLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layx80"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/icon_inside"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/textfield_default_holo_light"
+                android:ems="10"
+                android:hint="@string/txt_angi_odau"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/text_22" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/btnClearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/layx10"
+                android:src="@drawable/icon_insidesearch_x" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2200ff00"
+        android:paddingLeft="@dimen/layx10"
+        android:text="@string/dining_help"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/text_18"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- CITY -->
+
+        <LinearLayout
+            android:id="@+id/filterCity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy60"
+            android:layout_margin="1dp"
+            android:background="@color/green2"
+            android:gravity="center"
+            android:onClick="onCityFilter"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/cityIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/filter_map" />
+
+            <TextView
+                android:id="@+id/cityName"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Tỉnh/T.phố" />
+
+            <TextView
+                android:id="@+id/cityValue"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="6"
+                android:background="@color/WHITE"
+                android:gravity="center|left"
+                android:text="Hà nội" />
+        </LinearLayout>
+        <!-- LANDMARK -->
+
+        <LinearLayout
+            android:id="@+id/filterArea"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy60"
+            android:layout_margin="1dp"
+            android:background="@color/green2"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/filter_map" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Khu vực" />
+
+            <TextView
+                android:id="@+id/abstractInfor"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="6"
+                android:background="@color/WHITE"
+                android:gravity="center|left"
+                android:text="" />
+        </LinearLayout>
+        <!-- BUSENESE TYPE -->
+
+        <LinearLayout
+            android:id="@+id/filterBuseneseType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy60"
+            android:layout_margin="1dp"
+            android:background="@color/green2"
+            android:gravity="center"
+            android:onClick="onBusineseFilter" >
+
+            <ImageView
+                android:id="@+id/typeIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/filter_businesstype" />
+
+            <TextView
+                android:id="@+id/typeName"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Loại hình" />
+
+            <TextView
+                android:id="@+id/typeValue"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="6"
+                android:background="@color/WHITE"
+                android:gravity="center|left"
+                android:text="Bất kỳ" />
+        </LinearLayout>
+        <!-- PURPOSE -->
+
+        <LinearLayout
+            android:id="@+id/filterPurpose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy60"
+            android:layout_margin="1dp"
+            android:background="@color/green2"
+            android:gravity="center"
+            android:onClick="onPurposeFilter"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/purposeIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onPurposeFilter"
+                android:src="@drawable/filter_purpose" />
+
+            <TextView
+                android:id="@+id/purposeName"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Mục đích" />
+
+            <TextView
+                android:id="@+id/purposeValue"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="6"
+                android:background="@color/WHITE"
+                android:gravity="center|left"
+                android:text="Bất kỳ" />
+        </LinearLayout>
+        <!-- CUISINE STYLE -->
+
+        <LinearLayout
+            android:id="@+id/filterCunsineStype"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy60"
+            android:layout_margin="1dp"
+            android:background="@color/green2"
+            android:gravity="center"
+            android:onClick="onCuisineStyle"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/styleIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/filter_cuisine" />
+
+            <TextView
+                android:id="@+id/styleName"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Phong cách" />
+
+            <TextView
+                android:id="@+id/styleValue"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="6"
+                android:background="@color/WHITE"
+                android:gravity="center|left"
+                android:text="Bất kỳ" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layy60"
+            android:layout_margin="1dp"
+            android:background="@color/green2"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/filter_scope" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Phạm vi" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/range_text"
+                style="@style/FilterText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(km)"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_20"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRate"
+        style="@style/GreenWhiteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:onClick="onSearch"
+        android:text="@string/txt_search" />
+
+</LinearLayout>
